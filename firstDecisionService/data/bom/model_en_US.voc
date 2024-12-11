@@ -1,0 +1,6 @@
+
+# bhagyashree.practice.firstdecisionservice.data.Response
+bhagyashree.practice.firstdecisionservice.data.Response#concept.label = Response
+bhagyashree.practice.firstdecisionservice.data.Response.Response(java.lang.String)#phrase.navigation = a new {Response} where {0, message}
+bhagyashree.practice.firstdecisionservice.data.Response.message#phrase.action = set the message of {this} to {message}
+bhagyashree.practice.firstdecisionservice.data.Response.message#phrase.navigation = {message} of {this}
