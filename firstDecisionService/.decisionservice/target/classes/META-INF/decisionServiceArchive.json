@@ -1,0 +1,15 @@
+{
+  "contentVersion" : "1.0.0",
+  "buildTime" : "2024-12-23T11:02:35Z",
+  "mavenGroupId" : "bhagyashree.practice.firstdecisionservice",
+  "mavenArtifactId" : "firstDecisionService",
+  "mavenVersion" : "1.0.0-SNAPSHOT",
+  "decisionServiceName" : "firstDecisionService",
+  "decisionServiceId" : "bhagyashree.practice.firstdecisionservice:firstDecisionServiceDecisionService",
+  "decisionServiceVersion" : "1.0.0-SNAPSHOT",
+  "engineRuntimeVersion" : "3.1.9",
+  "engineAPIVersion" : "3.1.0",
+  "decisionId" : "${decisionId}",
+  "commitId" : "${commitId}",
+  "mlIntegrationRuntimeVersion" : "48.0.4"
+}
