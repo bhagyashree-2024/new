@@ -1,0 +1,78 @@
+
+package bhagyashree.practice.practice_decisionservice.data;
+
+
+class Person
+        property ads.typeId "2"
+        #de.generated
+{
+
+    static class StatusEnum
+            extends java.lang.Enum
+            property ads.typeId "1"
+            #de.generated
+    {
+        domain {static Divorced, static Married, static Single}
+        static final readonly bhagyashree.practice.practice_decisionservice.data.Person.StatusEnum Divorced
+                    property ads.attributeId "1";
+        static final readonly bhagyashree.practice.practice_decisionservice.data.Person.StatusEnum Married
+                    property ads.attributeId "2";
+        static final readonly bhagyashree.practice.practice_decisionservice.data.Person.StatusEnum Single
+                    property ads.attributeId "3";
+    }
+    java.time.ZonedDateTime dateOfBirth
+                property ads.attributeId "1"
+                #update;
+    java.time.LocalDate dateOfLoanStart
+                property ads.attributeId "2"
+                #update;
+    java.util.List descendants domain 0,* class bhagyashree.practice.practice_decisionservice.data.Person
+                property ads.attributeId "3"
+                #update;
+    string firstName
+                property ads.attributeId "4"
+                #update;
+    java.math.BigDecimal income
+                property ads.attributeId "5"
+                #update;
+    string lastName
+                property ads.attributeId "6"
+                #update;
+    boolean noBankrupcy
+                property ads.attributeId "7"
+                #update;
+    int numberOfChildren
+                property ads.attributeId "8"
+                #update;
+    bhagyashree.practice.practice_decisionservice.data.Person.StatusEnum status
+                property ads.attributeId "9"
+                #update;
+    Person(java.time.ZonedDateTime dateOfBirth, 
+        java.time.LocalDate dateOfLoanStart, 
+        java.util.List descendants domain 0,* class bhagyashree.practice.practice_decisionservice.data.Person, 
+        string firstName, 
+        java.math.BigDecimal income, 
+        string lastName, 
+        boolean noBankrupcy, 
+        int numberOfChildren, 
+        bhagyashree.practice.practice_decisionservice.data.Person.StatusEnum status)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Person()
+                #dataio.default;
+    void addTo_descendants(bhagyashree.practice.practice_decisionservice.data.Person descendants)
+                property collectionAttribute "descendants"
+                #update;
+    void clear_descendants()
+                property collectionAttribute "descendants"
+                #update;
+    void removeFrom_descendants(bhagyashree.practice.practice_decisionservice.data.Person descendants)
+                property collectionAttribute "descendants"
+                #update;
+    void set_descendants(java.util.Collection descendants domain 0,* class bhagyashree.practice.practice_decisionservice.data.Person)
+                property collectionAttribute "descendants"
+                #update;
+}
+

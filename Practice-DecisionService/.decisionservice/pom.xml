@@ -2,23 +2,23 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>bhagyashree.practice.firstdecisionservice</groupId>
-        <artifactId>firstDecisionService</artifactId>
+        <groupId>bhagyashree.practice.practice_decisionservice</groupId>
+        <artifactId>practice-DecisionService</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>firstDecisionServiceDecisionService</artifactId>
+    <artifactId>practice-DecisionServiceDecisionService</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
-            <groupId>bhagyashree.practice.firstdecisionservice</groupId>
-            <artifactId>data</artifactId>
+            <groupId>bhagyashree.practice.practice_decisionservice</groupId>
+            <artifactId>practiceModel</artifactId>
             <version>LATEST-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>bhagyashree.practice.firstdecisionservice</groupId>
-            <artifactId>firstDecisionModel</artifactId>
+            <groupId>bhagyashree.practice.practice_decisionservice</groupId>
+            <artifactId>data</artifactId>
             <version>LATEST-SNAPSHOT</version>
         </dependency>
         <dependency>
@@ -78,7 +78,6 @@
 
 
 
-
 <build>
         <resources>
             <resource>
@@ -104,8 +103,8 @@
                         <configuration>
                             <artifactItems>
                                 <artifactItem>
-                                    <groupId>bhagyashree.practice.firstdecisionservice</groupId>
-                                    <artifactId>data</artifactId>
+                                    <groupId>bhagyashree.practice.practice_decisionservice</groupId>
+                                    <artifactId>practiceModel</artifactId>
                                     <version>LATEST-SNAPSHOT</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
@@ -113,8 +112,8 @@
                                     <outputDirectory>${project.build.directory}/classes</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
-                                    <groupId>bhagyashree.practice.firstdecisionservice</groupId>
-                                    <artifactId>firstDecisionModel</artifactId>
+                                    <groupId>bhagyashree.practice.practice_decisionservice</groupId>
+                                    <artifactId>data</artifactId>
                                     <version>LATEST-SNAPSHOT</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>

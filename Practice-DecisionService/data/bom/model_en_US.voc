@@ -1,0 +1,41 @@
+
+# bhagyashree.practice.practice_decisionservice.data.Person
+bhagyashree.practice.practice_decisionservice.data.Person#concept.label = person
+bhagyashree.practice.practice_decisionservice.data.Person.Person(java.time.ZonedDateTime,java.time.LocalDate,java.util.List,java.lang.String,java.math.BigDecimal,java.lang.String,boolean,int,bhagyashree.practice.practice_decisionservice.data.Person.StatusEnum)#phrase.navigation = a new {person} where {0, date of birth} {1, date of loan start} {2, descendant} {3, first name} {4, income} {5, last name} {6, no bankrupcy} {7, number of children} {8, status}
+
+# bhagyashree.practice.practice_decisionservice.data.Person.StatusEnum
+bhagyashree.practice.practice_decisionservice.data.Person.StatusEnum#concept.label = person status enum
+bhagyashree.practice.practice_decisionservice.data.Person.StatusEnum.Divorced#instance.label = divorced
+bhagyashree.practice.practice_decisionservice.data.Person.StatusEnum.Married#instance.label = married
+bhagyashree.practice.practice_decisionservice.data.Person.StatusEnum.Single#instance.label = single
+bhagyashree.practice.practice_decisionservice.data.Person.addTo_descendants(bhagyashree.practice.practice_decisionservice.data.Person)#phrase.action = add {0} to the descendants of {this}
+bhagyashree.practice.practice_decisionservice.data.Person.clear_descendants()#phrase.action = clear the descendants of {this}
+bhagyashree.practice.practice_decisionservice.data.Person.dateOfBirth#phrase.action = set the date of birth of {this} to {date of birth}
+bhagyashree.practice.practice_decisionservice.data.Person.dateOfBirth#phrase.navigation = {date of birth} of {this}
+bhagyashree.practice.practice_decisionservice.data.Person.dateOfLoanStart#phrase.action = set the date of loan start of {this} to {date of loan start}
+bhagyashree.practice.practice_decisionservice.data.Person.dateOfLoanStart#phrase.navigation = {date of loan start} of {this}
+bhagyashree.practice.practice_decisionservice.data.Person.descendants#phrase.action = set the descendants of {this} to {descendant}
+bhagyashree.practice.practice_decisionservice.data.Person.descendants#phrase.navigation = {descendant} of {this}
+bhagyashree.practice.practice_decisionservice.data.Person.firstName#phrase.action = set the first name of {this} to {first name}
+bhagyashree.practice.practice_decisionservice.data.Person.firstName#phrase.navigation = {first name} of {this}
+bhagyashree.practice.practice_decisionservice.data.Person.income#phrase.action = set the income of {this} to {income}
+bhagyashree.practice.practice_decisionservice.data.Person.income#phrase.addition_setter = add {income} to the income of {this}
+bhagyashree.practice.practice_decisionservice.data.Person.income#phrase.navigation = {income} of {this}
+bhagyashree.practice.practice_decisionservice.data.Person.income#phrase.subtraction_setter = subtract {income} from the income of {this}
+bhagyashree.practice.practice_decisionservice.data.Person.lastName#phrase.action = set the last name of {this} to {last name}
+bhagyashree.practice.practice_decisionservice.data.Person.lastName#phrase.navigation = {last name} of {this}
+bhagyashree.practice.practice_decisionservice.data.Person.noBankrupcy#phrase.action[0] = {this} gets no bankrupcy only if {no bankrupcy}
+bhagyashree.practice.practice_decisionservice.data.Person.noBankrupcy#phrase.action[1] = make it {no bankrupcy} that {this} is no bankrupcy
+bhagyashree.practice.practice_decisionservice.data.Person.noBankrupcy#phrase.action[1].deprecated = true
+bhagyashree.practice.practice_decisionservice.data.Person.noBankrupcy#phrase.navigation = {this} is no bankrupcy
+bhagyashree.practice.practice_decisionservice.data.Person.noBankrupcy#phrase.negative_predicate = {this} is not no bankrupcy
+bhagyashree.practice.practice_decisionservice.data.Person.noBankrupcy#phrase.negative_predicate_setter = {this} does not get no bankrupcy
+bhagyashree.practice.practice_decisionservice.data.Person.noBankrupcy#phrase.positive_predicate_setter = {this} gets no bankrupcy
+bhagyashree.practice.practice_decisionservice.data.Person.numberOfChildren#phrase.action = set the number of children of {this} to {number of children}
+bhagyashree.practice.practice_decisionservice.data.Person.numberOfChildren#phrase.addition_setter = add {number of children} to the number of children of {this}
+bhagyashree.practice.practice_decisionservice.data.Person.numberOfChildren#phrase.navigation = {number of children} of {this}
+bhagyashree.practice.practice_decisionservice.data.Person.numberOfChildren#phrase.subtraction_setter = subtract {number of children} from the number of children of {this}
+bhagyashree.practice.practice_decisionservice.data.Person.removeFrom_descendants(bhagyashree.practice.practice_decisionservice.data.Person)#phrase.action = remove {0} from the descendants of {this}
+bhagyashree.practice.practice_decisionservice.data.Person.status#phrase.action = set the status of {this} to {status}
+bhagyashree.practice.practice_decisionservice.data.Person.status#phrase.clearer = clear the status of {this}
+bhagyashree.practice.practice_decisionservice.data.Person.status#phrase.navigation = {status} of {this}
