@@ -16,7 +16,7 @@
         <variable id="node_0_ii" name="Input" typeRef="java.lang.String"/>
     </inputData>
     <decision id="node_1" name="Decision">
-        <description>Testing version 9
+        <description>Testing version 10
 
 </description>
         <extensionElements>
