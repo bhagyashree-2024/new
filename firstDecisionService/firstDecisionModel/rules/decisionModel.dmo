@@ -16,7 +16,7 @@
         <variable id="node_0_ii" name="Input" typeRef="java.lang.String"/>
     </inputData>
     <decision id="node_1" name="Decision">
-        <description>Testing version 14</description>
+        <description>Testing version 15</description>
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
                 <input bomType="java.lang.String" collection="false" name="Input"/>
@@ -28,7 +28,34 @@
         <informationRequirement>
             <requiredInput href="#node_0"/>
         </informationRequirement>
+        <knowledgeRequirement>
+            <requiredKnowledge href="#node_2"/>
+        </knowledgeRequirement>
     </decision>
+    <businessKnowledgeModel id="node_2" name="Prediction 2">
+        <extensionElements>
+            <properties xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <property name="ads.designer.bkKind"><![CDATA[prediction]]></property>
+            </properties>
+        </extensionElements>
+        <variable name="Prediction 2" typeRef="java.lang.String"/>
+        <encapsulatedLogic typeRef="java.lang.String">
+            <context>
+                <contextEntry>
+                    <variable name="class"/>
+                    <literalExpression>
+                        <text>""</text>
+                    </literalExpression>
+                </contextEntry>
+                <contextEntry>
+                    <variable name="method signature"/>
+                    <literalExpression>
+                        <text>""</text>
+                    </literalExpression>
+                </contextEntry>
+            </context>
+        </encapsulatedLogic>
+    </businessKnowledgeModel>
 </definitions>
 </definition>
 </com.ibm.rules.studio.model.decisionmodel:DecisionModel>
